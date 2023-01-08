@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+
+  // Top Level
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+
+  "compilerOptions": {
+    // Type Checking
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    // Modules
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "routes/*": ["src/routes/*"],
+      "styles/*": ["src/styles/*"]
+    },
+    "resolveJsonModule": true,
+
+    // Emit
+    "noEmit": true,
+    "newLine": "lf",
+    "removeComments": true,
+    "sourceMap": true,
+
+    // JavaScript Support
+    "allowJs": false,
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ESNext",
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}

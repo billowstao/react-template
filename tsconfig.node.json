@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+
+  // Top Level
+  "include": ["*.js", "*.mjs", "*.cjs", "*.ts", "*.mts", "*.cts"],
+
+  "compilerOptions": {
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+
+    // Language and Environment
+    "target": "ESNext",
+
+    // Projects
+    "composite": true
+  }
+}
