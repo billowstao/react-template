@@ -2,7 +2,15 @@
   "$schema": "https://json.schemastore.org/tsconfig.json",
 
   // Top Level
-  "include": ["*.js", "*.mjs", "*.cjs", "*.ts", "*.mts", "*.cts"],
+  "include": [
+    "*.js",
+    "*.mjs",
+    "*.cjs",
+    "*.ts",
+    "*.mts",
+    "*.cts",
+    "./config/scripts/*.ts"
+  ],
 
   "compilerOptions": {
     // Modules
@@ -21,5 +29,14 @@
 
     // Projects
     "composite": true
+  },
+
+  // ts-node
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": true,
+    "cwdMode": true,
+    "experimentalResolver": true,
+    "swc": true
   }
 }
