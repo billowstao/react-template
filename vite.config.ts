@@ -26,5 +26,7 @@ export default defineConfig({
   server: {
     open: '/',
   },
+  /* eslint-disable @typescript-eslint/no-unsafe-assignment --- vite plugin */
   plugins: [react({ tsDecorators: true })],
+  /* eslint-enable @typescript-eslint/no-unsafe-assignment */
 });

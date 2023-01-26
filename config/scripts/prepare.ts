@@ -4,5 +4,6 @@ const { CI } = env;
 const isCI: boolean = CI === 'true';
 
 if (!isCI) {
-  (await import('husky')).install();
+  const husky = await import('husky');
+  husky.install();
 }
