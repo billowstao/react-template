@@ -7,4 +7,5 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
+  plugins: [require('prettier-plugin-tailwindcss')]
 };
